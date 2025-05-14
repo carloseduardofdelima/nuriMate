@@ -1,0 +1,52 @@
+.recipeCard {
+    color: black;
+    width: 300px;
+    height: 320px;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 44px 13px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.recipeCard:hover {
+    transform: translateY(-5px);
+}
+
+.recipeCard img {
+    width: 300px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.recipeTitle {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.recipeTag {
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #a0bba3;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #cbfb8b;
+    color: gray;
+}
+
+.bookmark {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

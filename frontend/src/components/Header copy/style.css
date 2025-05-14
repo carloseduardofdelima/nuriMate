@@ -1,0 +1,36 @@
+aside {
+    padding: 2rem;
+}
+
+aside p {
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: centers;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background-color: rgba(229, 255, 191, 0.646);
+}
+
+li svg {
+    align-self: center;
+    margin-right: 5px;
+}
