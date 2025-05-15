@@ -10,7 +10,7 @@ export default function Recipes({ favorites = false }) {
     useEffect(() => {
         const fetchRecipes = async () => {
             try {
-                const response = await axios.get('nurimate-production.up.railway.app/api/recipes/random')
+                const response = await axios.get("https://nurimate-production.up.railway.app/api/recipes/random")
                 setRecipes(response.data);
                 console.log(response.data)
             } catch (error) {
