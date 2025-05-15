@@ -5,6 +5,7 @@
     color: black;
     overflow-y: auto;
     
+    
 }
 
 .recipes h1 {
@@ -13,7 +14,7 @@
 }
 
 main {
-    height: 100%;
+    margin-bottom: 5rem;
     display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;

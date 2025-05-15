@@ -1,0 +1,25 @@
+.sleep {
+    padding: 1rem;
+    width: 30vw;
+    height: 35vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sleep h1:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sleep p {
+    color: gray;
+}
+
+.sleep svg {
+    width: 2rem;
+}

@@ -8,12 +8,11 @@ export default function Sidebar() {
         <aside>
             <p>Menu</p>
             <ul>
-                <li><MdOutlineSpaceDashboard /> Dashboard</li>
+                <Link to="dashboard"><li><MdOutlineSpaceDashboard /> Dashboard</li></Link>
                 <Link to="recipes"><li><PiBowlFood /> Recipes</li></Link>
                 <Link to="saved"><li><MdBookmarkBorder /> Saved recipes</li></Link>
-                <li><MdOutlineCalendarToday /> Weekly prep</li>
-                <li><MdOutlineShoppingBasket /> Grocery list</li>
+                <Link to="calendar"><li><MdOutlineCalendarToday /> Weekly prep</li></Link>
             </ul>
-        </aside>
+        </aside >
     )
 }

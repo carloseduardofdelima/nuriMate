@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { fetchFoodsRandom } = require('../services/spoonacularService');
 
-router.get('/', async (req, res) => {
+router.get('/random', async (req, res) => {
   try {
     const foods = await fetchFoodsRandom(10); // Retorna 10 receitas aleatórias
     res.json(foods);

@@ -1,0 +1,28 @@
+.macro {
+    padding: 1rem;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.macro h1:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.macro p {
+    color: gray;
+}
+
+.macro svg {
+    width: 2rem;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress h1 {
+    font-size: 1rem;
+}

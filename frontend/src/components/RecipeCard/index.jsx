@@ -4,7 +4,7 @@ import { GoBookmark, GoBookmarkFill } from "react-icons/go";
 
 import { useState, useEffect } from 'react';
 
-export default function RecipeCard({ id, image, title }) {
+export default function RecipeCard({ id, image, title, time, tags = [] }) {
     const [isFavorited, setIsFavorited] = useState(false);
 
     // Verifica se já está salvo no localStorage
@@ -32,8 +32,12 @@ export default function RecipeCard({ id, image, title }) {
     return (
         <div className='recipeCard'>
             <img src={image} alt="" />
-            <div className='time'><LuTimer /> 30min</div>
-            <p className='recipeTag'>breakfast</p>
+            <div className='time'><LuTimer /> {time}min</div>
+            <div className="tags">
+                {tags.map((tag, index) => (
+                    <p key={index} className='recipeTag'>{tag}</p>
+                )).slice(0,3)}
+            </div>
             <p className='recipeTitle'>{title}</p>
             <button onClick={toggleFavorite} className="bookmark">
                 {isFavorited ? <GoBookmarkFill size={20} /> : <GoBookmark size={20} />}
